@@ -7,7 +7,7 @@ def convert():
         input_inches = int(txt_inchentry.get())
         input_intervals = int(txt_intervalentry.get())
         starting_inches = 0
-        for num in range(0, input_intervals+1):
+        for num in range(1, input_intervals+1):
             starting_inches += input_inches
             feet_conversion = int(starting_inches/12)
             inch_conversion = int(starting_inches%12)
